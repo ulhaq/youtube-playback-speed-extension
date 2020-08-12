@@ -1,0 +1,27 @@
+{
+  "name": "Youtube Playback Speed",
+  "version": "1.0",
+  "description": "Control Youtube Playback Speed",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon.png"
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": [
+        "content_script.js"
+      ],
+      "css": [
+        "css.css"
+      ]
+    }
+  ]
+}
