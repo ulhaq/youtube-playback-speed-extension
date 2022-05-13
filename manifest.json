@@ -2,7 +2,7 @@
     "name": "Youtube Playback Speed",
     "version": "1.0",
     "description": "Control Youtube Playback Speed",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "action": {
         "default_popup": "popup.html",
         "default_icon": "images/icon.png"
