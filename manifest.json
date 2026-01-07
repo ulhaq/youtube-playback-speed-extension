@@ -3,6 +3,11 @@
     "version": "1.0",
     "description": "Control Youtube Playback Speed",
     "manifest_version": 3,
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "@ytspeed"
+        }
+    },
     "action": {
         "default_popup": "popup.html",
         "default_icon": "images/icon.png"
