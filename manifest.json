@@ -12,8 +12,11 @@
         "default_popup": "popup.html",
         "default_icon": "images/icon.png"
     },
+    "icons": {
+        "48": "images/icon.png",
+        "96": "images/icon.png"
+    },
     "permissions": [
-        "tabs",
         "storage"
     ],
     "content_scripts": [

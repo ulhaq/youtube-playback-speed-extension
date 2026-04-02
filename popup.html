@@ -1,8 +1,44 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8">
+  <title>YouTube Playback Speed</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 12px;
+      width: 280px;
+      margin: 0;
+    }
+    p {
+      font-size: 13px;
+      color: #555;
+      margin: 0 0 10px;
+    }
+    label {
+      font-size: 13px;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 6px 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="number"]:focus {
+      outline: none;
+      border-color: #ec0000;
+    }
+  </style>
+</head>
 <body>
-    <p>Here you can specify the playback speed you want every YouTube video to begin with</p>
-    <input type="number" id="speed" value="2" step="0.05" min="0.05" max="16" placeholder="Enter default playback speed" required autofocus />
+  <p>Set the default playback speed for YouTube videos.</p>
+  <label for="speed">Speed</label>
+  <input type="number" id="speed" value="1" step="0.05" min="0.05" max="16" autofocus />
+  <script src="popup.js"></script>
 </body>
-<script src="popup.js"></script>
 </html>
